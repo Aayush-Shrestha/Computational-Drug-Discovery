@@ -1,0 +1,17 @@
+compound filtering ( H1N1)
+lipinski filetr(<2)
+
+drug bank
+binding affinity
+autodock vina .py
+pharmacophor model( approved drug )
+best protein - drug str
+weak interactions( pair, type)
+
+re- search
+QSAR
+Clustering model
+
+neuraminidase 1bji
+homology model 
+P03468
