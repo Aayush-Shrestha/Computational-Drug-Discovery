@@ -4,7 +4,6 @@ lipinski filetr(<2)
 drug bank
 binding affinity
 autodock vina .py
-pharmacophor model( approved drug )
 best protein - drug str
 weak interactions( pair, type)
 
@@ -15,3 +14,69 @@ Clustering model
 neuraminidase 1bji
 homology model 
 P03468
+
+
+        Descriptors.MolWt(mol),
+        Descriptors.MolLogP(mol),
+        Descriptors.NumHDonors(mol),
+        Descriptors.NumHAcceptors(mol),
+        Descriptors.TPSA(mol),
+        Descriptors.NumRotatableBonds(mol),
+        Descriptors.RingCount(mol),
+        Descriptors.FractionCSP3(mol),
+        Descriptors.NumViolationsLipinski(mol),  # Number of violations of Lipinski's Rule of Five
+        Descriptors.NOCount(mol),  # Number of Nitrogen-Oxygen bonds
+        Descriptors.NumAromaticRings(mol),  # Number of aromatic rings
+        Descriptors.AromaticProportion(mol)
+
+Molecular Weight (MolWt):
+	Definition: The sum of the atomic weights of all atoms in a molecule.
+	Use: Provides information about the mass of the molecule, which is important for various applications, including drug design.
+
+LogP (Partition Coefficient):
+	Definition: The logarithm of the partition coefficient, which measures the distribution of a compound between a hydrophobic and a 	hydrophilic phase.
+	Use: Indicates the compound's lipophilicity, which is crucial for predicting its absorption, distribution, metabolism, and excretion 	(ADME) properties.
+
+Number of Hydrogen Bond Donors (NumHDonors):
+	Definition: The count of hydrogen atoms that are potential donors of hydrogen bonds.
+	Use: Reflects the ability of the molecule to donate hydrogen bonds, which is relevant for interactions with biological targets.
+
+Number of Hydrogen Bond Acceptors (NumHAcceptors):
+	Definition: The count of atoms that can act as acceptors of hydrogen bonds.
+	Use: Indicates the molecule's capacity to form hydrogen bonds, which is significant for interactions with other molecules, particularly 	in biological systems.
+
+Topological Polar Surface Area (TPSA):
+	Definition: The surface area of a molecule's polar atoms, excluding contributions from hydrogens.
+	Use: Reflects the molecule's ability to participate in polar interactions, such as hydrogen bonding. Important for understanding 	interactions with biological targets.
+
+Number of Rotatable Bonds (NumRotatableBonds):
+	Definition: The count of bonds that allow free rotation around them.
+	Use: Indicates the molecular flexibility. Molecules with a higher number of rotatable bonds may have greater conformational flexibility, 	which can affect their biological activity.
+
+Number of Rings (RingCount):
+	Definition: The count of rings in the molecular structure.
+	Use: Reflects the structural complexity of the molecule. Some biological activities are influenced by the presence and type of rings in 	a molecule.
+
+Fraction of sp3 Hybridized Carbons (FractionCSP3):
+	Definition: The fraction of carbons in the molecule that are sp3 hybridized.
+	Use: Provides information about the stereochemistry and hybridization state of carbon atoms. Relevant for understanding the 3D structure 	and properties of the molecule.
+
+Number of Violations of Lipinski's Rule of Five (NumViolationsLipinski):
+	Definition: Counts the number of Lipinski's Rule of Five violations.
+	Use: Lipinski's Rule of Five is a set of criteria used to assess the drug-likeness of a molecule. It evaluates properties related to 	molecular weight, lipophilicity, and hydrogen bonding. This descriptor counts how many of these criteria are violated.
+
+Number of Nitrogen-Oxygen Bonds (NOCount):
+	Definition: Counts the number of nitrogen-oxygen bonds in the molecule.
+	Use: Provides information about the presence of specific functional groups, such as nitro groups, which may influence the molecule's 	biological activity.
+
+Number of Aromatic Rings (NumAromaticRings):
+	Definition: Counts the number of aromatic rings in the molecule.
+	Use: Indicates the presence of aromatic systems in the molecule, which can be important for interactions with biological targets.
+
+Aromatic Proportion (AromaticProportion):
+	Definition: The ratio of the number of aromatic atoms to the total number of heavy atoms.
+	Use: Provides a measure of the aromatic character of the molecule, which can be relevant for understanding its electronic structure and 	reactivity.
+
+
+-8kcal/mol
+pharmacophor model( approved drug )
