@@ -5,6 +5,8 @@ __pycache__/
 
 # C extensions
 *.so
+*.txt
+
 
 # Distribution / packaging
 .Python
@@ -77,6 +79,7 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+.virtual_documents
 
 # IPython
 profile_default/
@@ -158,5 +161,5 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
-.h5
-.pkl
+*.h5
+*.pkl
