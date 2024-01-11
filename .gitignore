@@ -2,6 +2,9 @@
 *.pkl
 *.txt
 *.zip
+*.png
+*.pdb
+
 
 .ipynb_checkpoints
 .virtual_documents
